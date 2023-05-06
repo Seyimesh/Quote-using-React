@@ -1,0 +1,11 @@
+.btn-bodys {
+  display: flex;
+  justify-content: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.btn-body {
+  margin: 12px;
+  border: 1px grey solid;
+  
+}

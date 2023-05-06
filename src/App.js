@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Quote from "./component/QuoteItem";
+import SavedQuote from "./component/QuoteSaved";
 
+const addQuotehandler = quote => { 
+  console.log('In App.js');
+  console.log(quote)
+};
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return ( 
+    <div>
+      <SavedQuote onAddQuote={addQuotehandler} />
+      <Quote items={quotes} />
     </div>
   );
 }
